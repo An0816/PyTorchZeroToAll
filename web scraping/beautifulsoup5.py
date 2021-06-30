@@ -1,11 +1,10 @@
 # scrape each philosopher one by one
-
 import requests
 from bs4 import BeautifulSoup
 import csv
 
-website = requests.get('https://www.britannica.com/topic/list-of-philosophers-2027173')
-soup = BeautifulSoup(website.text, 'html.parser')
+page = requests.get('https://www.britannica.com/topic/list-of-philosophers-2027173')
+soup = BeautifulSoup(page.text, 'html.parser')
 links = soup.select('.topic-list .md-crosslink')
 
 for link in links[:8]:
