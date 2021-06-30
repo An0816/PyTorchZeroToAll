@@ -4,7 +4,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-'''
+
 website = requests.get('https://www.britannica.com/biography/Mortimer-J-Adler')
 soup = BeautifulSoup(website.text, 'html.parser')
 
@@ -32,7 +32,7 @@ print(f'{name}\n{description}\n{image}\n{summary}\n{birth}\n')
 # print(summary)
 # print(name)
 # print(description)
-'''
+
 
 ## 다른 Author에 적용
 try:
